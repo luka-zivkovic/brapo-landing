@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Orange Sun -->
+  <circle cx="18" cy="10" r="6" fill="#FF6B00"/>
+  
+  <!-- Teal Mountains -->
+  <path d="M26 22L18 10L10 22L4 28H30L26 22Z" fill="#087F8C"/>
+</svg>

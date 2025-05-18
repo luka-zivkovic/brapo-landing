@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stylized B for Brapo -->
+  <path d="M160 100C160 77.9086 177.909 60 200 60H320C342.091 60 360 77.9086 360 100V180C360 202.091 342.091 220 320 220H200C177.909 220 160 202.091 160 180V100Z" fill="#FFC107"/>
+  <path d="M160 250C160 227.909 177.909 210 200 210H320C342.091 210 360 227.909 360 250V330C360 352.091 342.091 370 320 370H200C177.909 370 160 352.091 160 330V250Z" fill="#087F8C"/>
+  <path d="M290 120V170H320C325.523 170 330 165.523 330 160V130C330 124.477 325.523 120 320 120H290Z" fill="#FFFFFF"/>
+  <path d="M290 270V320H320C325.523 320 330 315.523 330 310V280C330 274.477 325.523 270 320 270H290Z" fill="#FFFFFF"/>
+  <!-- Connecting piece -->
+  <rect x="150" y="210" width="60" height="20" fill="#087F8C"/>
+  <!-- Bottom connecting piece -->
+  <rect x="150" y="370" width="60" height="20" fill="#FFC107"/>
+  <!-- Gradient circle element -->
+  <circle cx="400" cy="180" r="50" fill="url(#gradient)" />
+  
+  <defs>
+    <linearGradient id="gradient" x1="350" y1="130" x2="450" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC107"/>
+      <stop offset="1" stop-color="#087F8C"/>
+    </linearGradient>
+  </defs>
+</svg>
