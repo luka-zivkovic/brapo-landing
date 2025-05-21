@@ -100,7 +100,7 @@ export default function Testimonials() {
           </div>
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">What Our Clients Say</h2>
           <p className="mx-auto max-w-[600px] text-zinc-600 md:text-xl/relaxed lg:text-base/relaxed dark:text-zinc-400">
-            Discover how we've helped businesses like yours achieve remarkable growth
+            Discover how we&apos;ve helped businesses like yours achieve remarkable growth
           </p>
         </div>
         
@@ -160,7 +160,7 @@ export default function Testimonials() {
                           ))}
                         </div>
                         <blockquote className="text-lg md:text-xl italic mb-4 text-zinc-700 dark:text-zinc-300 leading-relaxed">
-                          "{testimonials[testimonialIndex].quote}"
+                          &quot;{testimonials[testimonialIndex].quote}&quot;
                         </blockquote>
                         <div>
                           <div className="font-bold text-lg text-zinc-900 dark:text-white">

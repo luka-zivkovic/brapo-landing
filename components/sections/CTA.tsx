@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
 
 export default function CTA() {
   return (
@@ -20,7 +19,7 @@ export default function CTA() {
               transition={{ duration: 0.5 }}
               className="inline-block bg-white/20 dark:bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-white text-sm font-medium mb-6"
             >
-              <span className="mr-2">✨</span> Let's Grow Together
+              <span className="mr-2">✨</span> Let&apos;s Grow Together
             </motion.div>
             
             <motion.h2 
@@ -75,7 +74,7 @@ export default function CTA() {
                   className="w-full h-12 px-4 rounded-lg border-2 border-transparent bg-white/10 text-white focus:border-white focus:outline-none focus:ring-0 appearance-none"
                   defaultValue=""
                 >
-                  <option value="" disabled className="text-zinc-500">I'm interested in...</option>
+                  <option value="" disabled className="text-zinc-500">I&apos;m interested in...</option>
                   <option value="development" className="text-zinc-800">Development Services</option>
                   <option value="marketing" className="text-zinc-800">Marketing Services</option>
                   <option value="automation" className="text-zinc-800">Automation Services</option>
@@ -93,7 +92,7 @@ export default function CTA() {
               </form>
               
               <p className="mt-3 text-xs text-amber-50">
-                No obligation. We'll analyze your needs and provide a custom growth plan.
+                No obligation. We&apos;ll analyze your needs and provide a custom growth plan.
               </p>
             </motion.div>
             

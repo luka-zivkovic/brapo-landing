@@ -1,9 +1,8 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
-import { motion, useInView } from "framer-motion";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import TiltCard from "@/components/ui/tilt-card";
-import AnimatedBackground from "@/components/ui/animated-background";
 import ClientOnly from "@/components/ui/client-only";
 
 interface FeatureProps {
@@ -12,128 +11,7 @@ interface FeatureProps {
   icon: React.ReactNode;
 }
 
-const features: FeatureProps[] = [
-  {
-    title: "Optimized Landing Pages",
-    description: "We design and develop high-converting landing pages that turn visitors into customers with industry-leading optimization techniques.",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Mobile App Development",
-    description: "We create intuitive mobile applications that connect your customers with your business, enhancing engagement and loyalty.",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Automation Systems",
-    description: "We implement powerful automation solutions that streamline your customer outreach, saving time and increasing effectiveness.",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Conversion Optimization",
-    description: "We employ data-driven techniques to optimize your digital assets for maximum conversion rates and business growth.",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Customer Journey Mapping",
-    description: "We design seamless customer experiences across all touchpoints, ensuring a cohesive and engaging journey for your users.",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Performance Analytics",
-    description: "We provide comprehensive analytics and reporting to measure the success of your digital initiatives and drive continuous improvement.",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
-        />
-      </svg>
-    ),
-  },
-];
+// Feature array removed since it's not used
 
 export function FeatureItem({
   title,
@@ -231,7 +109,6 @@ function FeatureContent({
 }
 
 function HowWeHelpContent() {
-  const containerRef = React.useRef<HTMLDivElement>(null);
   
   // Growth journey steps
   const growthSteps = [
@@ -325,7 +202,7 @@ function HowWeHelpContent() {
           </h2>
           
           <p className="mx-auto max-w-[700px] text-zinc-600 md:text-xl lg:text-2xl dark:text-zinc-400 mt-4">
-            We help you unlock your business's full potential, maximize your strengths, and focus on what truly matters: <span className="text-amber-600 dark:text-amber-400 font-medium">reaching new heights</span>.
+            We help you unlock your business&apos;s full potential, maximize your strengths, and focus on what truly matters: <span className="text-amber-600 dark:text-amber-400 font-medium">reaching new heights</span>.
           </p>
         </motion.div>
         
@@ -429,7 +306,7 @@ function HowWeHelpContent() {
             Ready to reach new heights?
           </h3>
           <p className="mb-8 max-w-2xl mx-auto text-zinc-700 dark:text-zinc-300">
-            Book a free consultation and we'll help you unlock your business's full potential.
+            Book a free consultation and we&apos;ll help you unlock your business&apos;s full potential.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -456,49 +333,6 @@ function HowWeHelpContent() {
         </motion.div>
       </div>
     </section>
-  );
-}
-
-// Animated counter component
-function StatCounter({ label, end, suffix = "" }: { label: string; end: number; suffix?: string }) {
-  // Safe counter that only runs on client
-  const [count, setCount] = useState(0);
-  const nodeRef = useRef(null);
-  const isInView = useInView(nodeRef, { once: true, amount: 0.5 });
-  
-  // Animation effect - only runs on client
-  useEffect(() => {
-    if (isInView) {
-      let start = 0;
-      const duration = 2000;
-      const increment = end / (duration / 16); // 60fps
-      
-      const timer = setInterval(() => {
-        start += increment;
-        if (start > end) {
-          setCount(end);
-          clearInterval(timer);
-        } else {
-          setCount(Math.floor(start));
-        }
-      }, 16);
-      
-      return () => clearInterval(timer);
-    }
-  }, [isInView, end]);
-  
-  return (
-    <div ref={nodeRef} className="p-4 text-center">
-      <motion.div 
-        className="text-2xl md:text-3xl font-bold text-teal-600 dark:text-teal-400"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
-        transition={{ duration: 0.5, type: "spring" }}
-      >
-        {count}{suffix}
-      </motion.div>
-      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">{label}</p>
-    </div>
   );
 }
 
