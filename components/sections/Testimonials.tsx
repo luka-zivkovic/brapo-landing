@@ -28,9 +28,9 @@ const testimonials: Testimonial[] = [
   },
   {
     quote: "brapo helped us with strategic marketing that perfectly aligned with our innovation-focused brand. Their data-driven approach generated a 220% ROI on our digital campaigns within just the first quarter.",
-    author: "Mihai Runcan",
+    author: "Filip Andrejic",
     position: "CEO",
-    company: "InnovatorSpark",
+    company: "BGDiplomat Limo",
     avatar: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80"
   },
   {
