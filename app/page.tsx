@@ -6,6 +6,7 @@ import WhatWeDo from "@/components/sections/WhatWeDo";
 import Pricing from "@/components/sections/Pricing";
 import Testimonials from "@/components/sections/Testimonials";
 import CTA from "@/components/sections/CTA";
+import SectionDivider from "@/components/ui/section-divider";
 
 
 export default function Home() {
@@ -19,19 +20,41 @@ export default function Home() {
         </section>
         
         {/* What We Do Section */}
-        <WhatWeDo />
+        <section id="what-we-do">
+          <WhatWeDo />
+        </section>
+        
+        {/* Section Divider */}
+        <SectionDivider />
         
         {/* How We Help Section */}
-        <HowWeHelp />
+        <section id="how-we-help">
+          <HowWeHelp />
+        </section>
+        
+        {/* Section Divider */}
+        <SectionDivider />
         
         {/* Pricing Section */}
-        <Pricing />
+        <section id="pricing">
+          <Pricing />
+        </section>
+        
+        {/* Section Divider */}
+        <SectionDivider />
         
         {/* Testimonials Section */}
-        <Testimonials />
+        <section id="testimonials">
+          <Testimonials />
+        </section>
+        
+        {/* Section Divider */}
+        <SectionDivider />
         
         {/* CTA Section */}
-        <CTA />
+        <section id="cta">
+          <CTA />
+        </section>
       </main>
       <Footer />
     </div>
