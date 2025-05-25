@@ -41,9 +41,9 @@ const caseStudies: CaseStudy[] = [
     client: "B2B Software Consultancy",
     industry: "Technology Consulting",
     service: "Automation",
-    summary: "Implemented an automated lead generation and outreach system that significantly increased qualified leads and boosted revenue by 67% within six months.",
+    summary: "Implemented an AI-powered lead generation and outreach system that significantly increased qualified leads and boosted revenue by 67% within six months. This ongoing partnership continues to deliver results today.",
     challenge: "The client was struggling with inconsistent lead generation and manual outreach processes. Their sales team spent too much time on administrative tasks instead of building relationships. Leads were falling through the cracks, and follow-up was inconsistent. Their existing CRM was underutilized and data quality was poor, making it difficult to track the sales pipeline accurately.",
-    solution: "We designed and implemented a comprehensive lead generation automation system that integrated with their existing CRM. The solution included multi-channel lead capture forms, automated lead scoring, personalized email sequences, and intelligent follow-up scheduling based on prospect engagement.",
+    solution: "We designed and implemented a comprehensive AI-driven lead generation system that integrated with their existing CRM. The solution includes multi-channel lead capture forms, AI-powered lead scoring, intelligent outreach automation, personalized email sequences, and AI-based follow-up scheduling that adapts based on prospect engagement patterns.",
     results: [
       "67% increase in quarterly revenue",
       "3.5x more qualified leads per month",
@@ -55,10 +55,10 @@ const caseStudies: CaseStudy[] = [
     logoColor: "#4A90E2",
     implementationDetails: [
       "Conducted a thorough audit of existing CRM data and sales processes to identify bottlenecks and opportunities",
-      "Implemented HubSpot CRM integration with custom lead scoring algorithms based on industry-specific metrics",
-      "Created dynamic email templates with smart personalization that adapted based on recipient engagement",
-      "Developed custom web forms with progressive profiling to increase lead quality while reducing friction",
-      "Built automated workflows that routed leads to the appropriate team members based on lead score, industry, and deal size"
+      "Implemented CRM integration with AI-powered lead scoring algorithms that continuously learn from conversion patterns",
+      "Created dynamic email templates with AI-driven personalization that adapts based on recipient engagement",
+      "Developed custom web forms with progressive profiling and AI lead qualification to increase lead quality",
+      "Built automated workflows with AI lead routing that directs prospects to the appropriate team members based on intent signals, industry, and deal size"
     ],
     technicalChallenges: [
       "CRM data quality was poor with over 40% of records containing duplicate or incomplete information",
@@ -67,10 +67,11 @@ const caseStudies: CaseStudy[] = [
       "Sales team was resistant to learning new tools or changing established processes"
     ],
     technicalSolutions: [
-      "Implemented an ETL process using Python to clean, deduplicate, and enrich CRM data before migration",
-      "Built a custom middleware layer to overcome API limitations, allowing for bidirectional data flow",
-      "Created a comprehensive GDPR compliance system with automated consent tracking and preference centers",
-      "Developed a phased training program with hands-on workshops and created custom sales playbooks"
+      "Implemented an ETL process using Python and ML algorithms to clean, deduplicate, and enrich CRM data",
+      "Built a custom middleware layer with AI data synchronization to overcome API limitations",
+      "Created a comprehensive GDPR compliance system with AI-monitored consent tracking",
+      "Developed AI-assisted lead scoring models that continuously improve based on conversion data",
+      "Implemented natural language processing for email sentiment analysis to optimize outreach timing"
     ],
     deliveryHighlights: [
       "Launched lead capture forms within 2 weeks, allowing immediate data collection while the rest of the system was being built",
@@ -79,12 +80,12 @@ const caseStudies: CaseStudy[] = [
       "Provided weekly progress dashboards showing the impact of each new feature as it was deployed",
       "Conducted iterative training sessions that allowed the team to start using new features immediately after delivery"
     ],
-    timeline: "Initial deployment: 2 weeks, Full implementation: 3 months",
-    teamSize: "Key skills: CRM Integration, Marketing Automation, Data Processing, API Development",
+    timeline: "Initial deployment: 2 weeks, Full implementation: 3 months, Ongoing partnership: Present",
+    teamSize: "Key skills: AI Lead Scoring, CRM Integration, Marketing Automation, NLP, Machine Learning",
     testimonial: {
-      quote: "The automation solution digitrail built transformed our sales process. We're now converting more leads with less effort, and our sales team can focus on what they do best - building relationships and closing deals. The ROI has been exceptional.",
-      author: "Sarah Johnson",
-      position: "VP of Sales, B2B Software Consultancy"
+      quote: "The AI-powered automation solution brapo built transformed our sales process. We're now converting more leads with less effort, and our sales team can focus on what they do best - building relationships and closing deals. The ROI has been exceptional, which is why we continue our partnership today as they still generate high-quality leads for us month after month.",
+      author: "Vladimir Antonoski",
+      position: "CEO, Audacity One"
     }
   },
   {
@@ -135,8 +136,8 @@ const caseStudies: CaseStudy[] = [
     teamSize: "Key skills: Database Architecture, UI/UX Design, Frontend Development, Backend Integration, DevOps",
     testimonial: {
       quote: "The CRM system digitrail built for us has completely transformed our business. We now have visibility into our operations that we never thought possible. The system has paid for itself several times over through improved fleet management alone.",
-      author: "Martin Berger",
-      position: "Operations Director, EuroRent Cars"
+      author: "Filip Andrejic",
+      position: "CEO, BGDiplomat"
     }
   },
   {
