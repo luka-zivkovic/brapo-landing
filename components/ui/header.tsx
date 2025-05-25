@@ -25,6 +25,8 @@ export default function Header() {
     { name: "What We Do", href: "#what-we-do" },
     { name: "Pricing", href: "#pricing" },
     { name: "Testimonials", href: "#testimonials" },
+    { name: "Case Studies", href: "/case-studies" },
+    { name: "Knowledge Base", href: "/knowledge-base" },
   ];
   
   return (
@@ -40,14 +42,14 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
-              <div className="relative w-8 h-8">
+              <div className="relative w-10 h-10 flex items-center justify-center">
                 <img 
-                  src="/brapo-logo.svg" 
-                  alt="brapo logo" 
+                  src="/logo_duo.png" 
+                  alt="digitrail logo" 
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-amber-600 to-teal-600 dark:from-amber-400 dark:to-teal-400 text-transparent bg-clip-text">brapo</span>
+              <span className="text-xl font-bold bg-gradient-to-r from-amber-600 to-teal-600 dark:from-amber-400 dark:to-teal-400 text-transparent bg-clip-text">digitrail</span>
             </Link>
           </div>
           

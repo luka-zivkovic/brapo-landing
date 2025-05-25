@@ -25,9 +25,9 @@ export default function Footer() {
     {
       title: "Resources",
       links: [
-        { name: "Case Studies", href: "#testimonials" },
+        { name: "Case Studies", href: "/case-studies" },
         { name: "Blog", href: "#" },
-        { name: "Knowledge Base", href: "#" },
+        { name: "Knowledge Base", href: "/knowledge-base" },
         { name: "Success Stories", href: "#testimonials" },
       ],
     },
@@ -36,8 +36,8 @@ export default function Footer() {
       links: [
         { name: "Consultation", href: "#cta" },
         { name: "Support", href: "#" },
-        { name: "Privacy Policy", href: "#" },
-        { name: "Terms of Service", href: "#" },
+        { name: "Privacy Policy", href: "/privacy-policy" },
+        { name: "Terms of Service", href: "/terms-of-service" },
       ],
     },
   ];
@@ -73,14 +73,14 @@ export default function Footer() {
         
         <div className="border-t border-amber-200 dark:border-amber-900/30 pt-8 flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <div className="relative w-8 h-8">
+            <div className="relative w-10 h-10 flex items-center justify-center">
               <img 
-                src="/brapo-logo.svg" 
-                alt="brapo logo" 
+                src="/logo_duo.png" 
+                alt="digitrail logo" 
                 className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-amber-600 to-teal-600 dark:from-amber-400 dark:to-teal-400 text-transparent bg-clip-text">brapo</span>
+            <span className="text-xl font-bold bg-gradient-to-r from-amber-600 to-teal-600 dark:from-amber-400 dark:to-teal-400 text-transparent bg-clip-text">digitrail</span>
           </div>
           
           <div className="flex gap-4 mb-4 md:mb-0">
@@ -155,7 +155,7 @@ export default function Footer() {
           </div>
           
           <div className="text-sm text-zinc-600 dark:text-zinc-400">
-            © {new Date().getFullYear()} brapo. All rights reserved.
+            © {new Date().getFullYear()} digitrail. All rights reserved.
           </div>
         </div>
       </div>

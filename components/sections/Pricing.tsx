@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 interface ServicePricing {
   name: string;
   setupPrice: string;
-  monthlyPrice?: string;
+  hasUpkeepCosts?: boolean;
   description: string;
   features: string[];
   inDemand?: boolean;
@@ -17,8 +17,8 @@ const services: ServicePricing[] = [
   // Development Services
   {
     name: "Landing Page Creation",
-    setupPrice: "300€",
-    monthlyPrice: "100€",
+    setupPrice: "From 300€",
+    hasUpkeepCosts: true,
     description: "High-converting landing pages designed to turn visitors into customers",
     features: [
       "Custom design & development",
@@ -32,7 +32,7 @@ const services: ServicePricing[] = [
   },
   {
     name: "Mobile App Development",
-    setupPrice: "4.000€",
+    setupPrice: "From 4.000€",
     description: "Custom mobile applications for iOS and Android platforms",
     features: [
       "Native or cross-platform development",
@@ -46,8 +46,8 @@ const services: ServicePricing[] = [
   },
   {
     name: "E-Commerce Website",
-    setupPrice: "2.500€",
-    monthlyPrice: "150€",
+    setupPrice: "From 2.500€",
+    hasUpkeepCosts: true,
     description: "Full-featured online stores built to drive sales and growth",
     features: [
       "Product catalog management",
@@ -60,8 +60,8 @@ const services: ServicePricing[] = [
   },
   {
     name: "AI Agents Implementation",
-    setupPrice: "1.200€",
-    monthlyPrice: "180€",
+    setupPrice: "From 1.200€",
+    hasUpkeepCosts: true,
     description: "Intelligent AI agents integrated into your website to enhance user experience",
     features: [
       "Custom AI agent development",
@@ -77,8 +77,8 @@ const services: ServicePricing[] = [
   // Marketing Services
   {
     name: "Email Marketing",
-    setupPrice: "500€",
-    monthlyPrice: "250€",
+    setupPrice: "From 500€",
+    hasUpkeepCosts: true,
     description: "Strategic email campaigns to nurture leads and drive conversions",
     features: [
       "Campaign strategy & planning",
@@ -92,8 +92,8 @@ const services: ServicePricing[] = [
   },
   {
     name: "PPC Advertising",
-    setupPrice: "800€",
-    monthlyPrice: "350€",
+    setupPrice: "From 800€",
+    hasUpkeepCosts: true,
     description: "Targeted pay-per-click campaigns across search and social platforms",
     features: [
       "Keyword research & strategy",
@@ -106,8 +106,8 @@ const services: ServicePricing[] = [
   },
   {
     name: "AI Avatars",
-    setupPrice: "900€",
-    monthlyPrice: "200€",
+    setupPrice: "From 900€",
+    hasUpkeepCosts: true,
     description: "Custom AI-driven virtual brand representatives for enhanced marketing",
     features: [
       "Personalized virtual brand ambassador",
@@ -121,8 +121,8 @@ const services: ServicePricing[] = [
   },
   {
     name: "Ed Tech Campaigns",
-    setupPrice: "1.200€",
-    monthlyPrice: "350€",
+    setupPrice: "From 1.200€",
+    hasUpkeepCosts: true,
     description: "Strategic marketing campaigns tailored for educational technology platforms",
     features: [
       "Education market research",
@@ -138,8 +138,8 @@ const services: ServicePricing[] = [
   // Automation Services
   {
     name: "CRM Implementation",
-    setupPrice: "1.500€",
-    monthlyPrice: "200€",
+    setupPrice: "From 1.500€",
+    hasUpkeepCosts: true,
     description: "Custom CRM solutions to streamline your customer relationships",
     features: [
       "System configuration",
@@ -153,8 +153,8 @@ const services: ServicePricing[] = [
   },
   {
     name: "Lead Generation & Outreach",
-    setupPrice: "1.000€",
-    monthlyPrice: "300€",
+    setupPrice: "From 1.000€",
+    hasUpkeepCosts: true,
     description: "Automated systems to capture, qualify, and nurture potential customers",
     features: [
       "Lead capture form creation",
@@ -283,17 +283,17 @@ export default function Pricing() {
                 <h3 className="text-xl font-bold">{service.name}</h3>
                 <div className="mt-3 flex gap-3">
                   <div>
-                    <span className="text-xs text-zinc-500 dark:text-zinc-400">Setup</span>
+                    <span className="text-xs text-zinc-500 dark:text-zinc-400">Initial Investment</span>
                     <div>
                       <span className="text-2xl font-bold text-amber-600 dark:text-amber-500">{service.setupPrice}</span>
                     </div>
                   </div>
                   
-                  {service.monthlyPrice && (
+                  {service.hasUpkeepCosts && (
                     <div>
-                      <span className="text-xs text-zinc-500 dark:text-zinc-400">Monthly</span>
+                      <span className="text-xs text-zinc-500 dark:text-zinc-400">Ongoing</span>
                       <div>
-                        <span className="text-lg font-bold text-teal-600 dark:text-teal-500">{service.monthlyPrice}</span>
+                        <span className="text-sm font-medium text-teal-600 dark:text-teal-500">Maintenance & Support Available</span>
                       </div>
                     </div>
                   )}

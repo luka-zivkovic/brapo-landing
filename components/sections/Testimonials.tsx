@@ -13,14 +13,14 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    quote: "brapo's development team revamped our entire web presence, resulting in a 45% increase in user engagement and a 3x boost in conversions. Their approach to UX and technical implementation was exceptional.",
+    quote: "Digitrail's development team revamped our entire web presence, resulting in a 45% increase in user engagement and a 3x boost in conversions. Their approach to UX and technical implementation was exceptional.",
     author: "Marko Marinkovic",
     position: "CEO",
     company: "Evervise",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80"
   },
   {
-    quote: "The AI integration and automation services provided by brapo transformed our customer service operations completely. We've reduced response time by 78% while improving customer satisfaction ratings.",
+    quote: "The AI integration and automation services provided by Digitrail transformed our customer service operations completely. We've reduced response time by 78% while improving customer satisfaction ratings.",
     author: "Vladimir Antonoski",
     position: "CEO",
     company: "Audacity",
@@ -34,14 +34,14 @@ const testimonials: Testimonial[] = [
     avatar: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80"
   },
   {
-    quote: "The Ed Tech campaign created by brapo for my online courses was brilliant. They understood exactly how to reach educators and students alike, resulting in over 10,000 new enrollments and significant audience growth.",
+    quote: "The Ed Tech campaign created by Digitrail for my online courses was brilliant. They understood exactly how to reach educators and students alike, resulting in over 10,000 new enrollments and significant audience growth.",
     author: "Luka Bojovic",
     position: "EdTech Influencer",
     company: "LearnWithLuka",
     avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80"
   },
   {
-    quote: "Your success story starts here. Partner with brapo to transform your digital presence and achieve remarkable business growth, just like our satisfied clients.",
+    quote: "Your success story starts here. Partner with Digitrail to transform your digital presence and achieve remarkable business growth, just like our satisfied clients.",
     author: "Your Name",
     position: "Your Position",
     company: "Your Company",
