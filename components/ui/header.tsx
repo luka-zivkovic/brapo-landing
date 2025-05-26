@@ -19,14 +19,15 @@ export default function Header() {
     };
   }, []);
   
+  // Fix navigation by ensuring hash links work from any page by prefixing with / for root path
   const navLinks = [
-    { name: "Home", href: "#top" },
-    { name: "How We Help", href: "#how-we-help" },
-    { name: "What We Do", href: "#what-we-do" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Case Studies", href: "/case-studies" },
-    { name: "Knowledge Base", href: "/knowledge-base" },
+    { name: "Home", href: "/" },
+    { name: "How We Help", href: "/#how-we-help" },
+    { name: "What We Do", href: "/#what-we-do" },
+    { name: "Pricing", href: "/#pricing" },
+    { name: "Testimonials", href: "/#testimonials" },
+    { name: "Case Studies", href: "/case-studies", isStandalone: true },
+    { name: "Knowledge Base", href: "/knowledge-base", isStandalone: true },
   ];
   
   return (
@@ -53,12 +54,16 @@ export default function Header() {
             </Link>
           </div>
           
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium transition-colors hover:text-amber-600 dark:hover:text-amber-400"
+                className={`text-sm font-medium transition-colors ${
+                  link.isStandalone
+                    ? "px-3 py-1 border border-amber-500 dark:border-amber-600 text-amber-600 dark:text-amber-500 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-md"
+                    : "hover:text-amber-600 dark:hover:text-amber-400"
+                }`}
               >
                 {link.name}
               </Link>
@@ -67,8 +72,8 @@ export default function Header() {
           
           <div className="flex items-center gap-2">
             <Link
-              href="#cta"
-              className="hidden md:flex h-9 items-center justify-center rounded-md bg-blue-600 px-4 text-sm font-medium text-white shadow-sm transition-colors hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600"
+              href="/#cta"
+              className="hidden md:flex h-9 items-center justify-center px-4 text-sm font-medium bg-amber-500 dark:bg-amber-600 text-white dark:text-white hover:bg-amber-600 dark:hover:bg-amber-700 rounded-md transition-colors shadow-sm"
             >
               Get Started
             </Link>
@@ -129,15 +134,19 @@ export default function Header() {
             <Link
               key={link.name}
               href={link.href}
-              className="block py-2 text-sm font-medium hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+              className={`block py-2 text-sm font-medium transition-colors ${
+                link.isStandalone
+                  ? "my-2 px-3 py-2 border border-amber-500 dark:border-amber-600 text-amber-600 dark:text-amber-500 text-center rounded-md"
+                  : "hover:text-amber-600 dark:hover:text-amber-400"
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}
             </Link>
           ))}
           <Link
-            href="#cta"
-            className="block py-2 mt-2 text-sm font-medium bg-white text-amber-600 hover:bg-amber-50 transition-colors shadow-lg rounded-md px-3 text-center"
+            href="/#cta"
+            className="block py-2 mt-2 text-sm font-medium bg-amber-500 dark:bg-amber-600 text-white dark:text-white hover:bg-amber-600 dark:hover:bg-amber-700 rounded-md px-3 text-center transition-colors shadow-sm"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Get Started

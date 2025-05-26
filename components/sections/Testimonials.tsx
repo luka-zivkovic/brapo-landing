@@ -8,8 +8,24 @@ interface Testimonial {
   author: string;
   position: string;
   company: string;
-  avatar: string;
+  avatar: string | null;
 }
+
+// Placeholder avatar component that displays initials
+const PlaceholderAvatar = ({ name }: { name: string }) => {
+  // Get initials from the name
+  const initials = name
+    .split(' ')
+    .map(part => part[0])
+    .join('')
+    .toUpperCase();
+  
+  return (
+    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300">
+      {initials}
+    </div>
+  );
+};
 
 const testimonials: Testimonial[] = [
   {
@@ -17,35 +33,35 @@ const testimonials: Testimonial[] = [
     author: "Marko Marinkovic",
     position: "CEO",
     company: "Evervise",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80"
+    avatar: "/marko_marinkovic.jpg"
   },
   {
     quote: "The AI integration and automation services provided by Digitrail transformed our customer service operations completely. We've reduced response time by 78% while improving customer satisfaction ratings.",
     author: "Vladimir Antonoski",
     position: "CEO",
     company: "Audacity",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80"
+    avatar: "/vladimir_antonoski.webp"
   },
   {
     quote: "brapo helped us with strategic marketing that perfectly aligned with our innovation-focused brand. Their data-driven approach generated a 220% ROI on our digital campaigns within just the first quarter.",
     author: "Filip Andrejic",
     position: "CEO",
     company: "BGDiplomat Limo",
-    avatar: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80"
+    avatar: "/filip_andrejic.jpg"
   },
   {
     quote: "The Ed Tech campaign created by Digitrail for my online courses was brilliant. They understood exactly how to reach educators and students alike, resulting in over 10,000 new enrollments and significant audience growth.",
     author: "Luka Bojovic",
-    position: "EdTech Influencer",
-    company: "LearnWithLuka",
-    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80"
+    position: "Influencer",
+    company: "How to become an influencer",
+    avatar: "/luka_bojovic.jpg"
   },
   {
     quote: "Your success story starts here. Partner with Digitrail to transform your digital presence and achieve remarkable business growth, just like our satisfied clients.",
     author: "Your Name",
     position: "Your Position",
     company: "Your Company",
-    avatar: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80"
+    avatar: null // We'll use a placeholder component instead of an image
   }
 ];
 
@@ -130,11 +146,23 @@ export default function Testimonials() {
                       <div className="shrink-0 flex flex-col items-center">
                         <div className="relative">
                           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-400 to-teal-500 blur-sm opacity-50"></div>
-                          <img 
-                            src={testimonials[testimonialIndex].avatar} 
-                            alt={testimonials[testimonialIndex].author}
-                            className="relative w-20 h-20 rounded-full object-cover border-2 border-white dark:border-zinc-700"
-                          />
+                          {testimonials[testimonialIndex].avatar ? (
+                            <img 
+                              src={testimonials[testimonialIndex].avatar} 
+                              alt={testimonials[testimonialIndex].author}
+                              className="relative w-20 h-20 rounded-full object-cover border-2 border-white dark:border-zinc-700"
+                            />
+                          ) : (
+                            <div className="relative w-20 h-20 rounded-full border-2 border-white dark:border-zinc-700 flex items-center justify-center bg-amber-100 dark:bg-amber-900/30">
+                              <span className="text-2xl font-bold text-amber-700 dark:text-amber-300">
+                                {testimonials[testimonialIndex].author
+                                  .split(' ')
+                                  .map(part => part[0])
+                                  .join('')
+                                  .toUpperCase()}
+                              </span>
+                            </div>
+                          )}
                         </div>
                         
                         {/* Only show Your Success Story badge for the last testimonial */}
