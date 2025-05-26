@@ -22,7 +22,7 @@ const caseStudies: CaseStudy[] = [
   {
     id: "lead-generation-automation",
     title: "Lead Generation & Outreach Automation",
-    client: "B2B Software Consultancy",
+    client: "Audacity One",
     industry: "Technology Consulting",
     service: "Automation",
     summary: "Implemented an automated lead generation and outreach system that significantly increased qualified leads and boosted revenue by 67% within six months.",
@@ -40,7 +40,7 @@ const caseStudies: CaseStudy[] = [
   {
     id: "car-rental-crm-implementation",
     title: "CRM System for Car Rental Business",
-    client: "EuroRent Cars",
+    client: "BGDiplomat",
     industry: "Automotive",
     service: "Automation",
     summary: "Developed and implemented a custom CRM solution for a car rental company that streamlined operations, provided robust KPI tracking, and optimized their fleet investment decisions.",
@@ -58,7 +58,7 @@ const caseStudies: CaseStudy[] = [
   {
     id: "barber-shop-mobile-app",
     title: "Barber Shop Mobile App Development",
-    client: "Classic Cuts",
+    client: "Dos Hermanos Barbers",
     industry: "Personal Services",
     service: "Development",
     summary: "Created a custom mobile app for a premium barber shop that revolutionized their scheduling system, increased client retention by 70%, and boosted average revenue per customer.",
