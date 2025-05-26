@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
 import Link from "next/link";
-import { motion, useInView, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { motion, useInView, useScroll, useTransform } from "framer-motion";
 
 interface CaseStudy {
   id: string;
@@ -212,7 +212,7 @@ const AnimatedCounter = ({ value, label, prefix = "", suffix = "", color = "ambe
   
   useEffect(() => {
     if (isInView) {
-      let startValue = 0;
+      const startValue = 0;
       const endValue = numericValue;
       const duration = 2000;
       const startTime = Date.now();
@@ -349,7 +349,7 @@ export default function CaseStudyDetail() {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-3xl font-bold mb-6">Case Study Not Found</h1>
-              <p className="mb-6">Sorry, we couldn't find the case study you're looking for.</p>
+              <p className="mb-6">Sorry, we couldn&apos;t find the case study you&apos;re looking for.</p>
               <Link href="/case-studies" className="inline-flex items-center text-amber-600 dark:text-amber-400 font-medium hover:text-amber-700 dark:hover:text-amber-300 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd" />
@@ -739,7 +739,7 @@ export default function CaseStudyDetail() {
                   </div>
                   
                   <div className="flex flex-col items-center text-center max-w-3xl mx-auto pt-4">
-                    <p className="text-xl md:text-2xl italic text-zinc-800 dark:text-zinc-100 mb-8">"{caseStudy.testimonial.quote}"</p>
+                    <p className="text-xl md:text-2xl italic text-zinc-800 dark:text-zinc-100 mb-8">&ldquo;{caseStudy.testimonial.quote}&rdquo;</p>
                     
                     <div>
                       <p className="font-bold text-lg mb-1">{caseStudy.testimonial.author}</p>
@@ -759,7 +759,7 @@ export default function CaseStudyDetail() {
               >
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to achieve similar results?</h3>
                 <p className="text-zinc-700 dark:text-zinc-300 mb-8 max-w-2xl mx-auto">
-                  Let's work together to create your success story. Our team is ready to help you overcome challenges and reach your business goals.
+                  Let&apos;s work together to create your success story. Our team is ready to help you overcome challenges and reach your business goals.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link 

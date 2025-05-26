@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Footer() {
@@ -62,9 +63,11 @@ export default function Footer() {
         <div className="border-t border-amber-200 dark:border-amber-900/30 pt-8 flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <div className="relative w-10 h-10 flex items-center justify-center">
-              <img 
+              <Image 
                 src="/logo_duo.png" 
                 alt="digitrail logo" 
+                width={40}
+                height={40}
                 className="w-full h-full object-contain"
               />
             </div>

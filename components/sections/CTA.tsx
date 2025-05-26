@@ -202,7 +202,7 @@ export default function CTA() {
                 
                 {submitStatus === "success" && (
                   <div className="bg-green-100 text-green-700 p-3 rounded-lg text-sm">
-                    Thank you for your message! We'll be in touch soon.
+                    Thank you for your message! We&apos;ll be in touch soon.
                   </div>
                 )}
                 

@@ -467,7 +467,7 @@ const ArticleDetail = () => {
         <main className="pt-20 pb-16">
           <div className="container mx-auto px-4 md:px-6 text-center py-24">
             <h1 className="text-3xl font-bold mb-4">Article Not Found</h1>
-            <p className="mb-8">The article you're looking for doesn't exist or has been moved.</p>
+            <p className="mb-8">The article you&apos;re looking for doesn&apos;t exist or has been moved.</p>
             <Link href="/knowledge-base" className="px-6 py-3 bg-amber-600 text-white font-medium rounded-lg hover:bg-amber-700 transition-colors">
               Back to Knowledge Base
             </Link>

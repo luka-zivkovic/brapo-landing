@@ -11,7 +11,8 @@ interface Testimonial {
   avatar: string | null;
 }
 
-// Placeholder avatar component that displays initials
+// Placeholder avatar component that displays initials - keeping for future use
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const PlaceholderAvatar = ({ name }: { name: string }) => {
   // Get initials from the name
   const initials = name

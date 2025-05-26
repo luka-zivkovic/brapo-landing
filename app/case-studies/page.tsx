@@ -85,7 +85,7 @@ export default function CaseStudies() {
             <div className="mx-auto max-w-3xl text-center mb-16">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Case Studies</h1>
               <p className="text-xl text-zinc-600 dark:text-zinc-400">
-                Explore how we've helped businesses solve real-world challenges and achieve measurable results.
+                Explore how we&apos;ve helped businesses solve real-world challenges and achieve measurable results.
               </p>
             </div>
             
@@ -137,7 +137,7 @@ export default function CaseStudies() {
               <div className="inline-block bg-gradient-to-r from-amber-50 to-teal-50 dark:from-amber-900/30 dark:to-teal-900/30 p-8 rounded-xl border border-amber-100 dark:border-amber-800/30 shadow-sm">
                 <h2 className="text-2xl font-bold mb-4">Ready to achieve similar results?</h2>
                 <p className="text-zinc-600 dark:text-zinc-400 mb-6 max-w-2xl mx-auto">
-                  Let's work together to create your success story. Our team is ready to help you overcome challenges and reach your business goals.
+                  Let&apos;s work together to create your success story. Our team is ready to help you overcome challenges and reach your business goals.
                 </p>
                 <Link 
                   href="#cta" 
