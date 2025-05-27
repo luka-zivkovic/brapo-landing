@@ -36,6 +36,61 @@ interface CaseStudy {
 // fetch this from an API or a shared data store to avoid duplication.
 const caseStudies: CaseStudy[] = [
   {
+    id: "integrated-digital-marketing-campaign",
+    title: "Integrated Digital Marketing Campaign",
+    client: "Evervise",
+    industry: "SaaS / B2B Technology",
+    service: "Digital Marketing",
+    summary: "Developed and executed a comprehensive digital marketing strategy combining PPC campaigns, targeted cold email outreach, and content marketing that generated 325+ qualified leads and $1.2M in new business within 90 days.",
+    challenge: "Evervise had a superior enterprise software solution but was struggling with high customer acquisition costs and low lead volume. Their previous marketing efforts were siloed, with disconnected PPC campaigns, inconsistent email outreach, and no cohesive lead nurturing strategy. Despite spending $25,000 monthly on ads, they were generating fewer than 40 qualified leads per month. The marketing team was struggling to prove ROI, and the sales team didn't trust the quality of marketing-generated leads.",
+    solution: "We implemented an integrated digital marketing approach that aligned all channels under a unified strategy. This included: (1) Restructured PPC campaigns with improved targeting, ad creative, and landing page optimization; (2) Developed a sophisticated cold email sequence with personalization at scale; (3) Created industry-specific lead magnets and gated content; (4) Implemented a multi-touch attribution model to accurately track performance across channels; and (5) Established an AI-powered lead scoring system to prioritize outreach.",
+    results: [
+      "325+ qualified leads generated in the first 90 days",
+      "$1.2M in new business revenue attributed to the campaign",
+      "62% reduction in cost per qualified lead",
+      "28% increase in email open rates and 15% higher response rates",
+      "PPC conversion rates improved from 1.8% to 4.7%"
+    ],
+    image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?q=80&w=800&h=500&auto=format&fit=crop",
+    logoColor: "#1E88E5",
+    implementationDetails: [
+      "Conducted comprehensive audit of previous marketing campaigns to identify performance gaps and opportunities",
+      "Rebuilt Google Ads campaigns with refined targeting parameters, negative keyword optimization, and custom intent audiences",
+      "Developed 15+ high-converting landing pages with A/B testing frameworks for continuous optimization",
+      "Created a 7-touch cold email sequence with dynamic personalization based on industry, role, and engagement data",
+      "Implemented LinkedIn advertising with retargeting sequences for website visitors and email non-responders",
+      "Produced industry-specific content assets including whitepapers, case studies, and ROI calculators"
+    ],
+    technicalChallenges: [
+      "Existing marketing tech stack had disconnected systems with no data integration between platforms",
+      "Historical campaign data was incomplete, making attribution and ROI analysis difficult",
+      "Email deliverability issues due to previous poor sending practices had damaged domain reputation",
+      "Website had slow page load times and poor mobile optimization, negatively impacting PPC conversion rates",
+      "CRM integration was lacking, creating manual work for lead processing and follow-up"
+    ],
+    technicalSolutions: [
+      "Implemented UTM parameter standardization and cross-platform tracking for cohesive attribution",
+      "Built custom dashboards integrating Google Analytics, Google Ads, LinkedIn Ads, and email metrics",
+      "Executed email domain reputation repair through gradual volume ramp-up and engagement-focused sends",
+      "Optimized website performance with image compression, code minification, and caching improvements",
+      "Created automated lead routing workflows between marketing platforms and CRM with bi-directional syncing"
+    ],
+    deliveryHighlights: [
+      "Launched the first optimized PPC campaigns within 1 week of project kickoff",
+      "Implemented email warm-up protocol that improved deliverability from 76% to 98% within 3 weeks",
+      "Created first set of industry-specific lead magnets within 2 weeks for immediate lead generation",
+      "Delivered comprehensive performance dashboard in week 3, providing immediate visibility into results",
+      "Established weekly optimization cadence that continuously improved campaign performance"
+    ],
+    timeline: "Initial implementation: 2 weeks, Performance optimization: 90 days, Ongoing management: 12+ months",
+    teamSize: "Key skills: PPC Management, Cold Email Campaigns, CRM Integration, Content Marketing, Analytics & Attribution",
+    testimonial: {
+      quote: "The brapo team transformed our digital marketing from disconnected tactics into a cohesive strategy that actually delivers results. Before working with them, we were wasting money on ads that didn't convert and sending emails that went nowhere. Now we have a predictable lead generation engine that consistently fills our sales pipeline and directly contributes to revenue growth.",
+      author: "Marko Marinkovic",
+      position: "CEO, Evervise"
+    }
+  },
+  {
     id: "lead-generation-automation",
     title: "Lead Generation & Outreach Automation",
     client: "Audacity One",

@@ -20,6 +20,24 @@ interface CaseStudy {
 
 const caseStudies: CaseStudy[] = [
   {
+    id: "integrated-digital-marketing-campaign",
+    title: "Integrated Digital Marketing Campaign",
+    client: "Evervise",
+    industry: "SaaS / B2B Technology",
+    service: "Digital Marketing",
+    summary: "Developed and executed a comprehensive digital marketing strategy combining PPC campaigns, targeted cold email outreach, and content marketing that generated 325+ qualified leads and $1.2M in new business within 90 days.",
+    challenge: "Evervise had a superior enterprise software solution but was struggling with high customer acquisition costs and low lead volume. Their previous marketing efforts were siloed, with disconnected PPC campaigns, inconsistent email outreach, and no cohesive lead nurturing strategy. Despite spending $25,000 monthly on ads, they were generating fewer than 40 qualified leads per month.",
+    solution: "We implemented an integrated digital marketing approach that aligned all channels under a unified strategy. This included: (1) Restructured PPC campaigns with improved targeting, ad creative, and landing page optimization; (2) Developed a sophisticated cold email sequence with personalization at scale; (3) Created industry-specific lead magnets and gated content; (4) Implemented a multi-touch attribution model to accurately track performance across channels; and (5) Established an AI-powered lead scoring system to prioritize outreach.",
+    results: [
+      "325+ qualified leads generated in the first 90 days",
+      "$1.2M in new business revenue attributed to the campaign",
+      "62% reduction in cost per qualified lead",
+      "28% increase in email open rates and 15% higher response rates",
+      "PPC conversion rates improved from 1.8% to 4.7%"
+    ],
+    image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?q=80&w=800&h=500&auto=format&fit=crop"
+  },
+  {
     id: "lead-generation-automation",
     title: "Lead Generation & Outreach Automation",
     client: "Audacity One",
