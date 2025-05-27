@@ -1,18 +1,22 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
+import Image from "next/image";
 
 export const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [showContent, setShowContent] = useState(false);
   const [videoSrc, setVideoSrc] = useState('/comet_background_flipped.mp4');
+  const [isMobile, setIsMobile] = useState(false);
   
-  // Effect to handle responsive video sources
+  // Effect to handle responsive sources - video for desktop, image for mobile
   useEffect(() => {
     const handleResize = () => {
       // Check if we're on mobile (less than 768px width)
-      if (window.innerWidth < 768) {
-        setVideoSrc('/comet_background_flipped_phone.mp4');
-      } else {
+      const mobileView = window.innerWidth < 768;
+      setIsMobile(mobileView);
+      
+      if (!mobileView) {
+        // Desktop - use video
         setVideoSrc('/comet_background_flipped.mp4');
       }
     };
@@ -45,20 +49,34 @@ export const Hero = () => {
 
   return (
     <div className="relative bg-white w-full h-screen overflow-hidden">
-      {/* Fullscreen video that scales to fit the screen */}
+      {/* Background content: video for desktop, image for mobile */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover z-10"
-          src={videoSrc}
-          key={videoSrc} // Add key to force remount when source changes
-        >
-          Your browser does not support the video tag.
-        </video>
+        {isMobile ? (
+          // Mobile - use a simple fullscreen background color with the logo as a background image
+          <div 
+            className="absolute inset-0 w-full h-full bg-white" 
+            style={{
+              backgroundImage: "url('/mobile_logo.png')",
+              backgroundPosition: "center center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat"
+            }}
+          />
+        ) : (
+          // Desktop - use the video
+          <video
+            ref={videoRef}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover z-10"
+            src={videoSrc}
+            key={videoSrc} // Add key to force remount when source changes
+          >
+            Your browser does not support the video tag.
+          </video>
+        )}
       </div>
       
       {/* Title positioned according to screenshot - desktop: higher, mobile: top of screen */}
