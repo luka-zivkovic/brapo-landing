@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
-import Image from "next/image";
 
 export const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
