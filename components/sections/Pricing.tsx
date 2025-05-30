@@ -17,7 +17,7 @@ const services: ServicePricing[] = [
   // Development Services
   {
     name: "Landing Page Creation",
-    setupPrice: "From 300€",
+    setupPrice: "500",
     hasUpkeepCosts: true,
     description: "High-converting landing pages designed to turn visitors into customers",
     features: [
@@ -32,7 +32,8 @@ const services: ServicePricing[] = [
   },
   {
     name: "Mobile App Development",
-    setupPrice: "From 4.000€",
+    setupPrice: "4.000€",
+    hasUpkeepCosts: true,
     description: "Custom mobile applications for iOS and Android platforms",
     features: [
       "Native or cross-platform development",
@@ -46,7 +47,7 @@ const services: ServicePricing[] = [
   },
   {
     name: "E-Commerce Website",
-    setupPrice: "From 2.500€",
+    setupPrice: "2.500€",
     hasUpkeepCosts: true,
     description: "Full-featured online stores built to drive sales and growth",
     features: [
@@ -60,7 +61,7 @@ const services: ServicePricing[] = [
   },
   {
     name: "AI Agents Implementation",
-    setupPrice: "From 1.200€",
+    setupPrice: "900€",
     hasUpkeepCosts: true,
     description: "Intelligent AI agents integrated into your website to enhance user experience",
     features: [
@@ -77,7 +78,7 @@ const services: ServicePricing[] = [
   // Marketing Services
   {
     name: "Email Marketing",
-    setupPrice: "From 500€",
+    setupPrice: "500€",
     hasUpkeepCosts: true,
     description: "Strategic email campaigns to nurture leads and drive conversions",
     features: [
@@ -92,7 +93,7 @@ const services: ServicePricing[] = [
   },
   {
     name: "PPC Advertising",
-    setupPrice: "From 800€",
+    setupPrice: "800€",
     hasUpkeepCosts: true,
     description: "Targeted pay-per-click campaigns across search and social platforms",
     features: [
@@ -106,7 +107,7 @@ const services: ServicePricing[] = [
   },
   {
     name: "AI Avatars",
-    setupPrice: "From 900€",
+    setupPrice: "900€",
     hasUpkeepCosts: true,
     description: "Custom AI-driven virtual brand representatives for enhanced marketing",
     features: [
@@ -121,7 +122,7 @@ const services: ServicePricing[] = [
   },
   {
     name: "Ed Tech Campaigns",
-    setupPrice: "From 1.200€",
+    setupPrice: "1.200€",
     hasUpkeepCosts: true,
     description: "Strategic marketing campaigns tailored for educational technology platforms",
     features: [
@@ -138,7 +139,7 @@ const services: ServicePricing[] = [
   // Automation Services
   {
     name: "CRM Implementation",
-    setupPrice: "From 1.500€",
+    setupPrice: "1.500€",
     hasUpkeepCosts: true,
     description: "Custom CRM solutions to streamline your customer relationships",
     features: [
@@ -153,7 +154,7 @@ const services: ServicePricing[] = [
   },
   {
     name: "Lead Generation & Outreach",
-    setupPrice: "From 1.000€",
+    setupPrice: "1.000€",
     hasUpkeepCosts: true,
     description: "Automated systems to capture, qualify, and nurture potential customers",
     features: [
@@ -283,7 +284,7 @@ export default function Pricing() {
                 <h3 className="text-xl font-bold">{service.name}</h3>
                 <div className="mt-3 flex gap-3">
                   <div>
-                    <span className="text-xs text-zinc-500 dark:text-zinc-400">Initial Investment</span>
+                    <span className="text-xs text-zinc-500 dark:text-zinc-400">From</span>
                     <div>
                       <span className="text-2xl font-bold text-amber-600 dark:text-amber-500">{service.setupPrice}</span>
                     </div>
