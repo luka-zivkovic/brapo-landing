@@ -117,7 +117,7 @@ const comparisonData = [
 
 export default function LandingPagePricing() {
   const [showComparison, setShowComparison] = useState(false);
-  const [selectedTier, setSelectedTier] = useState(1); // Professional is default
+  // const [selectedTier, setSelectedTier] = useState<string | null>(null); // Professional is default
 
   return (
     <div className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900 relative overflow-hidden">

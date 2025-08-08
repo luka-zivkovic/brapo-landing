@@ -92,7 +92,7 @@ const caseStudies = [
 
 export default function LandingPageShowcase() {
   const [activeShowcase, setActiveShowcase] = useState(0);
-  const [activeCaseStudy, setActiveCaseStudy] = useState(0);
+  // const [activeCaseStudy, setActiveCaseStudy] = useState(0);
 
   return (
     <div className="py-20 bg-white dark:bg-gray-900 relative overflow-hidden">

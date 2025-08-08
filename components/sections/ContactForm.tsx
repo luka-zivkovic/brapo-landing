@@ -48,7 +48,7 @@ export default function ContactForm() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-blue-600 dark:from-white dark:to-blue-300 bg-clip-text text-transparent">
-            Ready to Transform Your Business?
+            Ready to transform your digital presence? Let's talk!
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Join hundreds of businesses that have increased their conversion rates with our proven landing page system.
@@ -102,7 +102,7 @@ export default function ContactForm() {
                 Get Your Custom Quote in 24 Hours
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                Enter your email and we'll send you a personalized quote for your landing page project. 
+                Let&apos;s discuss your project and explore how we can help you achieve your goals. We&apos;ll send you a personalized quote for your landing page project. 
                 No spam, just a detailed proposal tailored to your business needs.
               </p>
 
@@ -125,7 +125,7 @@ export default function ContactForm() {
                       {isSubmitting ? (
                         <div className="flex items-center">
                           <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
-                          Sending...
+                          Let&apos;s create something amazing together
                         </div>
                       ) : (
                         'Get Quote'
@@ -148,7 +148,7 @@ export default function ContactForm() {
                     Quote Request Sent!
                   </h4>
                   <p className="text-gray-600 dark:text-gray-300">
-                    We'll send your personalized quote to <strong>{email}</strong> within 24 hours.
+                    We&apos;ll respond within 24 hours with a personalized quote to <strong>{email}</strong> within 24 hours.
                   </p>
                 </motion.div>
               )}
