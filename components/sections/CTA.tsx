@@ -243,12 +243,12 @@ export default function CTA() {
               </div>
               
               <div className="flex flex-col items-center">
-                <div className="mb-2 text-3xl font-bold text-white">30+</div>
+                <div className="mb-2 text-3xl font-bold text-white">15+</div>
                 <div className="text-sm text-amber-50">Industry Specialists</div>
               </div>
               
               <div className="flex flex-col items-center">
-                <div className="mb-2 text-3xl font-bold text-white">250+</div>
+                <div className="mb-2 text-3xl font-bold text-white">80+</div>
                 <div className="text-sm text-amber-50">Projects Delivered</div>
               </div>
             </div>

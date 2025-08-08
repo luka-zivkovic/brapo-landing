@@ -38,11 +38,11 @@ const caseStudies: CaseStudy[] = [
   {
     id: "integrated-digital-marketing-campaign",
     title: "Integrated Digital Marketing Campaign",
-    client: "Evervise",
+    client: "TechFlow Solutions",
     industry: "SaaS / B2B Technology",
     service: "Digital Marketing",
     summary: "Developed and executed a comprehensive digital marketing strategy combining PPC campaigns, targeted cold email outreach, and content marketing that generated 325+ qualified leads and $1.2M in new business within 90 days.",
-    challenge: "Evervise had a superior enterprise software solution but was struggling with high customer acquisition costs and low lead volume. Their previous marketing efforts were siloed, with disconnected PPC campaigns, inconsistent email outreach, and no cohesive lead nurturing strategy. Despite spending $25,000 monthly on ads, they were generating fewer than 40 qualified leads per month. The marketing team was struggling to prove ROI, and the sales team didn't trust the quality of marketing-generated leads.",
+    challenge: "TechFlow Solutions had a superior enterprise software solution but was struggling with high customer acquisition costs and low lead volume. Their previous marketing efforts were siloed, with disconnected PPC campaigns, inconsistent email outreach, and no cohesive lead nurturing strategy. Despite spending $25,000 monthly on ads, they were generating fewer than 40 qualified leads per month. The marketing team was struggling to prove ROI, and the sales team didn't trust the quality of marketing-generated leads.",
     solution: "We implemented an integrated digital marketing approach that aligned all channels under a unified strategy. This included: (1) Restructured PPC campaigns with improved targeting, ad creative, and landing page optimization; (2) Developed a sophisticated cold email sequence with personalization at scale; (3) Created industry-specific lead magnets and gated content; (4) Implemented a multi-touch attribution model to accurately track performance across channels; and (5) Established an AI-powered lead scoring system to prioritize outreach.",
     results: [
       "325+ qualified leads generated in the first 90 days",
@@ -85,15 +85,15 @@ const caseStudies: CaseStudy[] = [
     timeline: "Initial implementation: 2 weeks, Performance optimization: 90 days, Ongoing management: 12+ months",
     teamSize: "Key skills: PPC Management, Cold Email Campaigns, CRM Integration, Content Marketing, Analytics & Attribution",
     testimonial: {
-      quote: "The brapo team transformed our digital marketing from disconnected tactics into a cohesive strategy that actually delivers results. Before working with them, we were wasting money on ads that didn't convert and sending emails that went nowhere. Now we have a predictable lead generation engine that consistently fills our sales pipeline and directly contributes to revenue growth.",
-      author: "Marko Marinkovic",
-      position: "CEO, Evervise"
+      quote: "The team transformed our digital marketing from disconnected tactics into a cohesive strategy that actually delivers results. Before working with them, we were wasting money on ads that didn't convert and sending emails that went nowhere. Now we have a predictable lead generation engine that consistently fills our sales pipeline and directly contributes to revenue growth.",
+      author: "Sarah Johnson",
+      position: "CEO, TechFlow Solutions"
     }
   },
   {
     id: "lead-generation-automation",
     title: "Lead Generation & Outreach Automation",
-    client: "Audacity One",
+    client: "InnovateCorp",
     industry: "Technology Consulting",
     service: "Automation",
     summary: "Implemented an AI-powered lead generation and outreach system that significantly increased qualified leads and boosted revenue by 67% within six months. This ongoing partnership continues to deliver results today.",
@@ -138,15 +138,15 @@ const caseStudies: CaseStudy[] = [
     timeline: "Initial deployment: 2 weeks, Full implementation: 3 months, Ongoing partnership: Present",
     teamSize: "Key skills: AI Lead Scoring, CRM Integration, Marketing Automation, NLP, Machine Learning",
     testimonial: {
-      quote: "The AI-powered automation solution brapo built transformed our sales process. We're now converting more leads with less effort, and our sales team can focus on what they do best - building relationships and closing deals. The ROI has been exceptional, which is why we continue our partnership today as they still generate high-quality leads for us month after month.",
-      author: "Vladimir Antonoski",
-      position: "CEO, Audacity One"
+      quote: "The AI-powered automation solution transformed our sales process. We're now converting more leads with less effort, and our sales team can focus on what they do best - building relationships and closing deals. The ROI has been exceptional, which is why we continue our partnership today as they still generate high-quality leads for us month after month.",
+      author: "Michael Chen",
+      position: "CTO, InnovateCorp"
     }
   },
   {
     id: "car-rental-crm-implementation",
     title: "CRM System for Car Rental Business",
-    client: "BGDiplomat",
+    client: "AutoFleet Pro",
     industry: "Automotive",
     service: "Automation",
     summary: "Developed and implemented a custom CRM solution for a car rental company that streamlined operations, provided robust KPI tracking, and optimized their fleet investment decisions.",
@@ -190,15 +190,15 @@ const caseStudies: CaseStudy[] = [
     timeline: "Core reservation system: 8 weeks, Full system with all modules: 6 months",
     teamSize: "Key skills: Database Architecture, UI/UX Design, Frontend Development, Backend Integration, DevOps",
     testimonial: {
-      quote: "The CRM system digitrail built for us has completely transformed our business. We now have visibility into our operations that we never thought possible. The system has paid for itself several times over through improved fleet management alone.",
-      author: "Filip Andrejic",
-      position: "CEO, BGDiplomat"
+      quote: "The CRM system built for us has completely transformed our business. We now have visibility into our operations that we never thought possible. The system has paid for itself several times over through improved fleet management alone.",
+      author: "Emily Rodriguez",
+      position: "CEO, AutoFleet Pro"
     }
   },
   {
     id: "barber-shop-mobile-app",
     title: "Barber Shop Mobile App Development",
-    client: "Dos Hermanos Barbers",
+    client: "StyleCraft Salon",
     industry: "Personal Services",
     service: "Development",
     summary: "Created a custom mobile app for a premium barber shop that revolutionized their scheduling system, increased client retention by 70%, and boosted average revenue per customer.",
@@ -243,8 +243,8 @@ const caseStudies: CaseStudy[] = [
     teamSize: "Key skills: Mobile UI/UX, Backend Integration, Real-time Database Management, Payment Processing",
     testimonial: {
       quote: "Our clients absolutely love the app. It's not just made our lives easier by automating bookings—it's actually become a differentiator that sets us apart from other barber shops in the area. The style recommendations have been particularly popular, driving additional service revenue we weren't capturing before.",
-      author: "Janko Srdic",
-      position: "Owner, Dos Hermanos Barbers"
+      author: "David Thompson",
+      position: "Owner, StyleCraft Salon"
     }
   }
 ];

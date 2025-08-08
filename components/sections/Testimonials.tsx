@@ -30,35 +30,35 @@ const PlaceholderAvatar = ({ name }: { name: string }) => {
 
 const testimonials: Testimonial[] = [
   {
-    quote: "Digitrail's development team revamped our entire web presence, resulting in a 45% increase in user engagement and a 3x boost in conversions. Their approach to UX and technical implementation was exceptional.",
-    author: "Marko Marinkovic",
+    quote: "The development team completely transformed our web presence, resulting in a 45% increase in user engagement and a 3x boost in conversions. Their approach to UX and technical implementation was exceptional.",
+    author: "Sarah Johnson",
     position: "CEO",
-    company: "Evervise",
-    avatar: "/marko_marinkovic.jpg"
+    company: "TechFlow Solutions",
+    avatar: null
   },
   {
-    quote: "The AI integration and automation services provided by Digitrail transformed our customer service operations completely. We've reduced response time by 78% while improving customer satisfaction ratings.",
-    author: "Vladimir Antonoski",
-    position: "CEO",
-    company: "Audacity",
-    avatar: "/vladimir_antonoski.webp"
+    quote: "The AI integration and automation services transformed our customer service operations completely. We've reduced response time by 78% while improving customer satisfaction ratings significantly.",
+    author: "Michael Chen",
+    position: "CTO",
+    company: "InnovateCorp",
+    avatar: null
   },
   {
-    quote: "brapo helped us with strategic marketing that perfectly aligned with our innovation-focused brand. Their data-driven approach generated a 220% ROI on our digital campaigns within just the first quarter.",
-    author: "Filip Andrejic",
-    position: "CEO",
-    company: "BGDiplomat Limo",
-    avatar: "/filip_andrejic.jpg"
+    quote: "Their strategic marketing approach perfectly aligned with our brand vision. The data-driven campaigns generated a 220% ROI on our digital marketing efforts within just the first quarter.",
+    author: "Emily Rodriguez",
+    position: "Marketing Director",
+    company: "GrowthMax Agency",
+    avatar: null
   },
   {
-    quote: "The Ed Tech campaign created by Digitrail for my online courses was brilliant. They understood exactly how to reach educators and students alike, resulting in over 10,000 new enrollments and significant audience growth.",
-    author: "Luka Bojovic",
-    position: "Influencer",
-    company: "How to become an influencer",
-    avatar: "/luka_bojovic.jpg"
+    quote: "The Ed Tech campaign they created was brilliant. They understood exactly how to reach our target audience, resulting in over 10,000 new enrollments and significant brand growth.",
+    author: "David Thompson",
+    position: "Founder",
+    company: "EduTech Innovations",
+    avatar: null
   },
   {
-    quote: "Your success story starts here. Partner with Digitrail to transform your digital presence and achieve remarkable business growth, just like our satisfied clients.",
+    quote: "Your success story starts here. Partner with us to transform your digital presence and achieve remarkable business growth, just like our satisfied clients.",
     author: "Your Name",
     position: "Your Position",
     company: "Your Company",

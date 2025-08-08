@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Digitrail - Optimized Digital Solutions",
+  title: "brapo - Optimized Digital Solutions",
   description: "We create optimized landing pages, mobile apps, and automation solutions to connect businesses with their customers.",
 };
 
